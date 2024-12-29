@@ -21,7 +21,7 @@ public class ModItems {
     }
 
     public static final Item SUSPICIOUS_SUBSTANCE = register(
-            new Item(new Item.Settings().maxCount(16).enchantable(0).rarity(Rarity.EPIC)),
+            new Item(new Item.Settings().maxCount(16).rarity(Rarity.EPIC)),
             "suspicious_substance"
     );
     public static void initialize() {
