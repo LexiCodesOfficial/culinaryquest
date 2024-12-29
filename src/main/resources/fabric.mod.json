@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "culinary-quest",
+	"version": "${version}",
+	"name": "Culinary Quest",
+	"description": "A mod that adds 750+ food items to minecraft from Morocco to Japan.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://lexicodes.net/",
+		"sources": "https://github.com/LexiCodesOfficial/culinaryquest"
+	},
+	"license": "MIT",
+	"icon": "assets/culinary-quest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lexicodes.CulinaryQuest"
+		],
+		"client": [
+			"net.lexicodes.CulinaryQuestClient"
+		]
+	},
+	"mixins": [
+		"culinary-quest.mixins.json",
+		{
+			"config": "culinary-quest.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+
+	}
+}
