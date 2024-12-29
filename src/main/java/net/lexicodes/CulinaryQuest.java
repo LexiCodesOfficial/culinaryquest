@@ -11,6 +11,7 @@ public class CulinaryQuest implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Thank you for downloading Culinary Quest");
+		ModItems.initialize();
 	}
 }
