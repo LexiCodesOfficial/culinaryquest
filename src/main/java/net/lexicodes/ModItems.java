@@ -6,7 +6,6 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
 
 public class ModItems {
     public static Item register(Item item, String id) {
@@ -16,9 +15,7 @@ public class ModItems {
     }
 
     public static final Item SUSPICIOUS_SUBSTANCE = register(
-            new Item(new Item.Settings().maxCount(16).rarity(Rarity.EPIC)),
-            "suspicious_substance"
-    );
+            new Item(new Item.Settings()),"suspicious_substance");
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_SUBSTANCE));
