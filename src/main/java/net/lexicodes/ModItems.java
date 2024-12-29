@@ -11,7 +11,8 @@ import net.minecraft.util.Rarity;
 public class ModItems {
     public static Item register(Item item, String id) {
         Identifier itemID = Identifier.of(CulinaryQuest.MOD_ID, id);
-        return Registry.register(Registries.ITEM, itemID, item);
+        Item registeredItem = Registry.register(Registries.ITEM, itemID, item);
+        return registeredItem;
     }
 
     public static final Item SUSPICIOUS_SUBSTANCE = register(
